@@ -1,6 +1,5 @@
 name: eventiclejs
 title: EventicleJS Leading
-version: index
 nav:
   - modules/ROOT/nav.adoc
   - modules/book/nav.adoc
