@@ -27,4 +27,4 @@ jobs:
         env:
           DOCS_SECRET: ${{ secrets.DOCS_SECRET }}
         run: |
-          curl -XPOST -u "build_docs:$DOCS_SECRET" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/gjdawson/eventicle-docs/actions/workflows/publish.yml/dispatches --data '{"ref": "master"}'
+          curl -XPOST -u "build_docs:$env:DOCS_SECRET" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/gjdawson/eventicle-docs/actions/workflows/publish.yml/dispatches --data '{"ref": "master"}'
